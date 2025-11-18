@@ -1,0 +1,133 @@
+    body {
+    font-family: "Segoe UI", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    background: #f0f4f8;
+    margin: 0;
+    }
+
+    .card {
+      width: 300px;
+      height: 150px;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .controls {
+      margin-top: 15px;
+      text-align: center;
+    }
+
+    input {
+      padding: 8px 12px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      width: 200px;
+      text-align: center;
+    }
+
+    .progress {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .stats {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    .stats span {
+      margin: 0 10px;
+    }
+
+    .correct { color: green; }
+    .incorrect { color: red; }
+
+    
+    .modal {
+        display: none;
+        position: fixed;
+        left: 0; top: 0;
+        width: 100%; height: 100%;
+        background: rgba(0,0,0,0.5);
+        display: flex ;
+        justify-content: center;
+        align-items: center;
+        }
+
+
+    .modal-content {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      width: 300px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 8px 16px;
+      border: none;
+      background: #007bff;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+    .main-container {
+    display: flex;
+    align-items: flex-start; 
+    gap: 30px; 
+}
+
+
+  .difficulty-selection {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-top: 15px; 
+      display: flex;
+      flex-direction: column;
+      width: 150px;
+  }
+
+  .difficulty-selection h3 {
+      margin-top: 0;
+      font-size: 18px;
+      margin-bottom: 10px;
+  }
+
+  .difficulty-selection label {
+      display: block;
+      margin-bottom: 5px;
+      cursor: pointer;
+  }
+
+
+  @media (max-width: 768px) {
+      .main-container {
+          flex-direction: column;
+          align-items: center;
+          gap: 15px;
+      }
+  }
