@@ -1,7 +1,5 @@
-// script.js
-
 $(function() {
-    // 1. Створіть три набори слів для різних рівнів
+    
     const wordSets = {
         easy: [
             { en: "light", uk: "світло" },
@@ -135,7 +133,7 @@ $(function() {
 
     $("#resultModal").hide();
     
-    $("#card").text("Натисніть тут або введіть переклад, щоб розпочати!");
+    $("#card").text("Натисніть тут щоб розпочати!");
     $("#progress").text("0/10");
     $("#answer").prop('disabled', true);
     
@@ -143,5 +141,6 @@ $(function() {
     $("#card").off("click").on("click", function() {
         startGame();
     });
+
 
 });
